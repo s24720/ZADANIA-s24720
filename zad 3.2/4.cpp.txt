@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+
+    double a;
+    
+    cin >> a;
+    
+    std::cout.precision(2);
+    
+     if(a>0){
+    std::cout << std::fixed;
+    std::cout << "Pierwiastek: " << sqrt(a) << endl;
+    std::cout << "Odwrotnosc: " << 1.0 / a;
+     }else if(a<0){
+    std::cout << "Pierwiastek: BLAD" << endl;
+    std::cout << std::fixed;     
+    std::cout << "Odwrotnosc: " << 1.0 / a;
+     } else if(a==0){
+    std::cout << std::fixed;     
+    std::cout << "Pierwiastek: " << sqrt(a) << endl; 
+    std::cout << "Odwrotnosc: BLAD";
+     }
+    
+    return 0;
+
+}
+
+
+
+

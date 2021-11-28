@@ -1,0 +1,98 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  char litera;
+  cin >> litera;
+    
+  switch (litera)
+  {
+     case 'i': 
+        cout <<"Litera 'i' jest samogłoską";
+        break;
+     case 'e':
+        cout <<"Litera 'e' jest samogłoską";
+        break;
+     case 'y':
+        cout <<"Litera 'y' jest samogłoską";
+        break;
+     case 'u':
+        cout <<"Litera 'u' jest samogłoską";
+        break; 
+     case 'a':
+        cout <<"Litera 'a' jest samogłoską";
+        break;
+     case 'o':
+        cout <<"Litera 'o' jest samogłoską";
+        break;          
+     case 'd':
+        cout <<"Litera 'd' nie jest samogłoską";
+        break;
+     case 'l':
+        cout <<"Litera 'l' nie jest samogłoską";
+        break;
+     case 'h':
+        cout <<"Litera 'h' nie jest samogłoską";
+        break;         
+     case 'k':
+        cout <<"Litera 'k' nie jest samogłoską";
+        break;
+     case 'm':
+        cout <<"Litera 'm' nie jest samogłoską";
+        break;
+     case 't':
+        cout <<"Litera 't' nie jest samogłoską";
+        break;
+     case 'n':
+        cout <<"Litera 'n' nie jest samogłoską";
+        break;
+     case 'f':
+        cout <<"Litera 'f' nie jest samogłoską";
+        break;            
+     case 'p':
+        cout <<"Litera 'p' nie jest samogłoską";
+        break;     
+     case 'b':
+        cout <<"Litera 'b' nie jest samogłoską";
+        break;
+     case 'w':
+        cout <<"Litera 'w' nie jest samogłoską";
+        break;        
+     case 'r':
+        cout <<"Litera 'r' nie jest samogłoską";
+        break;  
+     case 'z':
+        cout <<"Litera 'z' nie jest samogłoską";
+        break;          
+     case 'j':
+        cout <<"Litera 'j' nie jest samogłoską";
+        break;
+     case 'v':
+        cout <<"Litera 'v' nie jest samogłoską";
+        break;
+     case 'c':
+        cout <<"Litera 'c' nie jest samogłoską";
+        break;           
+     case 'g':
+        cout <<"Litera 'g' nie jest samogłoską";
+        break;            
+     case 'q':
+        cout <<"Litera 'q' nie jest samogłoską";
+        break;           
+     case 's':
+        cout <<"Litera 's' nie jest samogłoską";
+        break;            
+     case 'x':
+        cout <<"Litera 'x' nie jest samogłoską";
+        break;
+          
+  }
+  return 0;
+}
+
+
+
+
+

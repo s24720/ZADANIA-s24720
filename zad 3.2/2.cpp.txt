@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    double a;
+   
+    std::cout.precision(2);
+    
+    cin >> a;
+    
+    std::cout << std::fixed;
+    std::cout << a;    
+    
+    return 0;
+    
+}
+
+
+
+
