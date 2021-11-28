@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+#include <unistd.h>
+using namespace std;
+
+auto main(int arc,char* argv[]) ->int
+
+{
+if (arc==0)
+{
+return 1;
+}
+        auto const pass=atoi(argv[1]);
+        for(int i=pass;i>=0;i--)
+        {cout<<i<<"..."<<endl;
+        sleep(1);
+
+        }
+}

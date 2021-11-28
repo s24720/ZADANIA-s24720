@@ -1,0 +1,35 @@
+ 
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+auto main(int arc,char* argv[]) ->int
+
+{
+if (arc>=2)
+{
+
+{
+    auto const pass=atoi(argv[1]);
+    if(pass!=0)
+{
+    for(int i=pass;i>=0;i--)
+    {if(i!=0)
+{
+
+    cout<<i<<" bottles of beer on the wall, "<<i<<" bottles of beer."<<endl;
+    cout<<"Take one down, pass it around,";
+     if(i-1!=0)
+    cout<<i-1<<" bottles of beer on the wall..."<<endl;
+}
+}
+cout<<endl;
+ cout<<"No more bottles of beer on the wall,no more bottles of beer."<<endl;
+cout<<"Go to the store and buy some more,"<<pass<<" bottles of beer on the wall...";
+}else
+cout<<"podano nieprawidłową wartość";
+}
+}else
+cout<<"podana nieprawidłowa wartość"<<endl;
+}

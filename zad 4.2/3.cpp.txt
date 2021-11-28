@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+#include <unistd.h>
+#include <ctime>
+#include <cstdlib>
+using namespace std;
+
+auto main() ->int
+
+{    srand(time(NULL));
+    int liczba,strzal,ilosc=1;
+    liczba=rand()%100+1;
+
+do
+{cout<<"podaj "<<ilosc<<" strzal: ";
+cin>>strzal;
+
+if(strzal>liczba)
+{
+cout<<"za dużo"<<endl;
+ilosc++;
+}else if(strzal<liczba)
+{
+cout<<"za mało"<<endl;
+ilosc++;
+}else
+cout<<endl;
+
+
+}while(liczba!=strzal);
+cout<<"Zgadles liczba to: "<<liczba<<" ilosc prob to:"<<ilosc ;
+
+return 0;
+}
