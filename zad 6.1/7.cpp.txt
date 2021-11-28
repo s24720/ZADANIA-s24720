@@ -1,0 +1,14 @@
+int dlugosc_napisu(int tab[],int n,int m)
+{
+    int zlicz=0;
+    for(int i=0;i<n;i++)
+{ 
+    if(m==tab[i])
+    zlicz++;   
+}
+    return zlicz;  
+}
+
+
+
+

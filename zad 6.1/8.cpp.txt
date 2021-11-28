@@ -1,0 +1,43 @@
+int dec_to_n(int a,int n)
+{ 
+ int z=1;
+ int x=0;
+ while(z<=a)
+ {x++;
+ z=z*n;
+     
+ }
+ int tab[x];
+ int i=x;
+ while(a)
+{
+   tab[i]=a%n;
+   a=a/n;
+   i--;
+      
+}
+for(int j=1;j<=x;j++)
+{ if(tab[j]==10)
+{
+ cout<<"A"<<" ";   
+}else 
+     if(tab[j]==11)
+{
+ cout<<"B"<<" ";   
+}else  if(tab[j]==12)
+{
+ cout<<"C"<<" ";   
+}else  if(tab[j]==13)
+{
+ cout<<"D"<<" ";   
+}else  if(tab[j]==14)
+{
+ cout<<"E"<<" ";   
+}else  if(tab[j]==15)
+{
+ cout<<"F"<<" ";   
+}else 
+ cout<<tab[j]<<" ";
+    
+}
+}

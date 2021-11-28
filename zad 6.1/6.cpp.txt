@@ -1,0 +1,49 @@
+int do_n(int a,int n)
+{ 
+    
+ int x=1;
+ int z=0;
+ while(x<=a)
+ {z++;
+  x=x*n;
+     
+ }
+    
+ int tab[il];
+ int i=z;
+ while(a)
+  {tab[i]=a%n;
+   a=a/n;
+   i--;
+      
+ }
+for(int j=1;j<=il;j++)
+{ if(tab[j]==10)
+{
+ cout<<"A"<<" ";   
+}else 
+     if(tab[j]==11)
+{
+ cout<<"B"<<" ";   
+}else  if(tab[j]==12)
+{
+ cout<<"C"<<" ";   
+}else  if(tab[j]==13)
+{
+ cout<<"D"<<" ";   
+}else  if(tab[j]==14)
+{
+ cout<<"E"<<" ";   
+}else  if(tab[j]==15)
+{
+ cout<<"F"<<" ";   
+}else 
+ cout<<tab[j]<<" ";
+    
+}
+}
+
+
+
+
+

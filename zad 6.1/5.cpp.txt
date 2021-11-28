@@ -1,0 +1,8 @@
+int wypisz_tabele(int tab[],int n)
+{
+   for(int i=0;i<n;i++)
+{   cout<<tab[i]<<" ";
+    
+    
+}
+}

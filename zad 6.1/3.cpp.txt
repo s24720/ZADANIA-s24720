@@ -1,0 +1,25 @@
+int menu()
+{ 
+    int x;
+    
+   cout<<"WITAJ W MOIM PROGRAMIE"<<endl;
+    
+    
+   cout<<"WPISZ LICZBE Z MENU"<<endl;
+    
+   cout<<"1 - wypisanie liczby INT_MAX"<<endl;
+    
+   cout<<"0 - wyjscie z programu"<<endl;
+    
+     cin>>x;
+    if(x==0)
+        return 0;
+     else if(x==1)
+         cout<<INT_MAX;
+        else 
+            menu();
+ }
+
+
+
+
