@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+int tab[100][100],k,w,MAX;
+cin>>k>>w;
+if(cin.fail()||w<=0||k<=0||w>100||k>100)
+{
+cout<<"BŁĄD";
+}
+else
+{
+for(int j=0; j < k; j++)
+{
+for(int i=0; i < w; i++)
+{
+cin>>tab[i][j];
+}
+}
+for(int i=0; i < w; i++)
+{
+MAX =tab[i][0];
+for(int j=1; j < k; j++)
+{
+if(tab[i][j] > MAX)
+MAX = tab[i][j];
+}
+cout<<MAX;
+if(i<w-1)
+{
+cout<<" ";
+}
+}
+}
+return 0;
+} 

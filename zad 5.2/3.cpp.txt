@@ -1,0 +1,32 @@
+#include <algorithm>
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+int n;
+bool flag = 1;
+string tab;
+getline(cin,tab);
+tab.erase(remove(tab.begin(), tab.end(), ' '), tab.end());
+tab.erase(remove(tab.begin(), tab.end(), '-'), tab.end());
+n=tab.length();
+for(int i=0;i<n-1;i++)
+if(tab[i]>=65&&tab[i]<=90)
+tab[i]=tab[i]+32;
+
+for(int i=0;i<n-1;i++){
+for(int j=0;j<n-1;j++){
+if(tab[j]>tab[j+1])
+swap(tab[j],tab[j+1]);
+if(tab[j]==tab[j+1]){
+flag = 0;
+break;}
+}}
+flag ? cout<<"Podany ciąg jest isogramem" : cout<<"Podany ciąg nie jest isogramem";
+return 0;
+}
+
+
+
+
