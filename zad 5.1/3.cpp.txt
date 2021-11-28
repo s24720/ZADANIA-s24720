@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+int main()
+{
+int n, dl,w;
+char tab_rev[100], tab[100];
+cin>>n;
+if(n>=100||n<=0)
+cout<<"BŁĄD";
+else
+{
+for(int i=0; i<n; i++)
+scanf("%c", &tab[i]);
+w=strlen(tab);
+for(int i=0; i<w; i++)
+{dl=(w-1)-i;
+tab_rev[dl]=tab[i];}
+print_tab(tab_rev,n-1);
+}
+return 0;
+}
