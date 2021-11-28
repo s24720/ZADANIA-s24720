@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+    auto init(int a[], int n) -> void
+{
+    for(int i=0;i<n;i++)
+{
+    a[i]=0;
+    cout<<a[i]<<" ";
+}
+}
+    int main()
+    {int b;
+    cin>>b;
+    int tab[b];
+    init(tab,b);
+    
+}
+
+
+
+
