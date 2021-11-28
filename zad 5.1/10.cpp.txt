@@ -1,0 +1,41 @@
+#include <iostream>
+#include <array>
+
+auto main() -> int {
+    auto s = std::array<u_int, 4>{};
+    for(auto i=0; i < 4; ++i) {
+        std::cin >> s[i];
+    }
+    if(s[0] != s[2] && s[1] != s[3] && s[0] <= 100 && s[2] <= 100) {
+        std::cout << "BŁĄD\n";
+        exit(1);
+    }
+    auto m1 = std::array<std::array<int, 100>, 100>{};
+    auto m2 = std::array<std::array<int, 100>, 100>{};
+    for(auto i=0; i < s[0]; ++i) {
+        for(auto j=0; j < s[1]; ++j) {
+            std::cin >> m1[i][j];
+        }
+    }
+    for(auto i=0; i < s[0]; ++i) {
+        for(auto j=0; j < s[1]; ++j) {
+            std::cin >> m2[i][j];
+        }
+    }
+    for(auto i=0; i < s[0]; ++i) {
+        for(auto j=0; j < s[1]; ++j) {
+            m1[i][j] += m2[i][j];
+            std::cout << m1[i][j];
+            if(j+1 != s[1])
+                std::cout << " ";
+        }
+        std::cout << "\n";
+    }
+
+}
+
+
+
+
+
+
