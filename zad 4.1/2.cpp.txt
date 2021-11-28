@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() { 
+    int a, b, c;
+    scanf("%d", &a);
+    scanf("%d", &b);
+    scanf("%d", &c);
+    if (c == 0) {
+       printf("Błędny argument c!!!");
+    } else {
+    for (a; a < b; a++) {
+        if (a % c == 0) {
+            printf("%d ",a);
+        }
+    }
+    }
+    return 0;
+}
+
+
+
+

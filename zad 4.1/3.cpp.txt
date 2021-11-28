@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() { 
+    int a, b, c;
+    scanf("%d", &a);
+    scanf("%d", &b);
+    scanf("%d", &c);
+    for (a; a < b; a = a + c) {
+            printf("%d ",a);
+        }
+    return 0;
+}
+
+
+
+

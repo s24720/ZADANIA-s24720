@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() { 
+    int a;
+    scanf("%d", &a);
+    if (a != 1 && a % 2 != 0 && a % 3 != 0 && a % 5 != 0 || a == 2 || a == 3 || a == 5) {
+        printf("Jest to liczba pierwsza");
+    } else {
+        printf("Nie jest to liczba pierwsza");
+    }
+    return 0;
+}
+
+
+
+
