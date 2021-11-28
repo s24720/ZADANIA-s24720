@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double x;
+    cin>>x;
+    int y=x/1;
+    double dzien = double(y) / 100;
+    double mies = (x - y) * 100;
+    double d = mies + dzien;
+    
+    if( d>=1.01 && d<=1.31 || d>=2.01 && d<=2.28 ||
+    d>=3.01 && d<=3.31 || d>=4.01 && d<=4.30 || d>=5.01 && d<=5.31 || 
+    d>=6.01 && d<=6.30 || d>=7.01 && d<=7.31 || d>=8.01 && d<=8.31 ||
+    d>=9.01 && d<=9.30 || d>=10.01 && d<=10.31 ||  d>=11.01 && d<=11.30 || d>=12.01 && d<=12.31)
+{   if( d<3.21 || d>=12.21)
+{
+         cout<<"Zima";   
+} 
+     else if (d>=3.21 && d<6.21)
+{
+        cout<<"Wiosna";
+}
+     else if (d>=6.21 && d<9.21)
+{
+      cout<<"Lato";   
+}
+     else if (d>=9.21 && d<12.21)
+{
+     cout<<"Jesień";   
+}
+        
+        
+}    else cout<<"BŁĄD";
+      
+    
+}
+
+
+
+
+
